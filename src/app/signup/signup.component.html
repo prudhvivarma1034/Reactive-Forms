@@ -1,0 +1,14 @@
+<div class="topContainer">
+    <div class="signup">
+        <form [formGroup]="reactiveForm">
+          <label >Sign up</label>
+          <input type="text" name="txt" placeholder="User name"   formControlName="username" >
+            <input type="email" name="email" placeholder="Email"   formControlName="email"  >
+            <input type="password" name="pswd" placeholder="Password"  formControlName="password" >
+            <button (click)="onSignup()">Sign up</button>
+          <p>Already have an account ?</p>
+          <button routerLink="/signin">Sign in</button>
+        </form>
+      </div>
+      </div>
+      
